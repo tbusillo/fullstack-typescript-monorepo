@@ -1,5 +1,6 @@
 {
   "name": "@fataldev/fullstack-typescript-monorepo",
+  "private": false,
   "version": "1.0.0",
   "description": "",
   "type": "module",
