@@ -1,3 +1,14 @@
 {
-  "compilerOptions": {}
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "module": "Node16",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node16",
+    "allowJs": false,
+    "resolveJsonModule": true
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.test.ts"]
 }

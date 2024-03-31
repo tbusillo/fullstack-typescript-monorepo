@@ -1,8 +1,7 @@
 import { defineWorkspace } from 'vitest/config'
-import path from 'node:path'
 
 export default defineWorkspace([
-  'packages/*',
+  'packages/*/vitest.config.ts',
   {
     test: {
       include: ['packages/**/*.test.ts'],
@@ -13,7 +12,7 @@ export default defineWorkspace([
     esbuild: { target: 'node20' },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, './src')
+        '@/': new URL('./src/', import.meta.url).pathname
       }
     }
   }
