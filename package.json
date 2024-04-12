@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "eslint . --ext .ts",
+    "lint": "pnpm exec eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "cli": "pnpm --filter @fataldev/cli",
     "prepare": "husky"
@@ -17,9 +17,9 @@
   "license": "ISC",
   "engines": {
     "node": ">=20",
-    "pnpm": ">=8.15.0"
+    "pnpm": ">=8.15.6"
   },
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@8.15.6",
   "pnpm": {
     "supportedArchitectures": {
       "os": [

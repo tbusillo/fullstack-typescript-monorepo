@@ -1,7 +1,7 @@
 name: 'Setup Infisical Action'
-author: "@fataldev"
+author: '@fataldev'
 description: 'Installs infisical in the runner and exports the INFISICAL_TOKEN.'
-inputs: 
+inputs:
   INFISICAL_TOKEN:
     description: 'The Infisical token to use for authentication.'
     required: true
